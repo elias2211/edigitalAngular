@@ -13,3 +13,8 @@ div.card{
 .table{
 	margin-top: 10px;
 }
+
+.table td{
+	font-size: 12pt;
+	color: green;
+}

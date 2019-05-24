@@ -1,13 +1,24 @@
 <div class='card'>
 	<div class='card-header'>
-		Product List
+		{{welcomeText}}
 	</div>
 	<div class='card-body'>
 		<div class='row'>
-			<div class='col-md-2'>Filter by:</div>
+			<div class='col-md-2'>Username: </div>
 			<div class='col-md-4'>
 				<input type='text' />
 			</div>
+		</div><br />
+		<div class ='row'>
+			<div class='col-md-2'>Password: </div>
+			<div class='col-md-4'>
+				<input type='text' />
+			</div>
+		</div><br />
+		<div class='signInButton'>
+			<button class='btn btn-primary'>
+				Log in!
+			</button>
 		</div>
 		<div class='row'>
 			<div class='col-md-6'>
@@ -15,7 +26,7 @@
 			</div>
 		</div>
 		<div class='table-responsive'>
-			<table class='table'>
+			<table class='table' *ngIf='products && products.length'>
 				<thead>
 					<tr>
 						<th>
@@ -29,10 +40,18 @@
 						<th>Price</th>
 						<th>5 Star Rating</th>
 					</tr>
+			
 				</thead>
 				<tbody>
-				
-					<pm-products></pm-products>
+					<tr *ngFor='let product of products'>
+						<td></td>
+						<td>{{ product.productName}}</td>
+						<td>{{ product.productCode}}</td>
+						<td>{{ product.releaseDate}}</td>
+						<td>{{ product.price}}</td>
+						<td>{{ product.productRating}}</td>
+					</tr>
+					
 				</tbody>
 			</table>
 		</div>
