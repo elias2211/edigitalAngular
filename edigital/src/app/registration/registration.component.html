@@ -1,31 +1,27 @@
-  <form>
+  <form:form method = "POST" action = "/username/api/v1/user">
+  <h2>User Information:</h2>
   First name:<br>
-  <input type="text" name="firstname" value="Mickey"><br>
+  <input type="text" name="firstname" required><br>
   Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br>
+  <input type="text" name="lastname" required><br>
+  Email:<br>
+  <input type="text" name="email" required><br>
   UserName:<br>
-  <input type="text" name="firstname" value="Mickey"><br>
+  <input type="text" name="username" required><br>
   Password:<br>
-  <input type="text" name="password" value="Mouse"><br>
-  :<br>
-  <input type="text" name="firstname" value="Mickey"><br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br>
-    First name:<br>
-  <input type="text" name="firstname" value="Mickey"><br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br>
-    First name:<br>
-  <input type="text" name="firstname" value="Mickey"><br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br>
-    First name:<br>
-  <input type="text" name="firstname" value="Mickey"><br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br>
-    First name:<br>
-  <input type="text" name="firstname" value="Mickey"><br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br>
+  <input type="text" name="password" required><br>
+  
+  
+  <h2>Address:</h2>
+  Line1:<br>
+  <input type="text" name="line1" required><br>
+  Line2:<br>
+  <input type="text" name="line2" ><br>
+  City:<br>
+  <input type="text" name="city" required><br>
+  State:<br>
+  <input type="text" name="state" required><br>
+  Zipcode:<br>
+  <input type="text" name="zipcode" required><br>
   <input type="submit" value="Submit">
 </form>
